@@ -1,4 +1,7 @@
 let musica = document.querySelector('audio');
+let duracao = document.querySelector('.fim');
+
+duracao.textContent = segundosParaMinutos(Math.floor(musica.duration));
 
 //eventos
 document.querySelector('.play').addEventListener('click', tocarMusica);
